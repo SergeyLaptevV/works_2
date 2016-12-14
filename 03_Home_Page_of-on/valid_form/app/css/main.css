@@ -1,0 +1,10 @@
+label {
+    width: 100px;
+}
+input {
+    border : 1px solid #ccc;
+}
+.content {
+    padding: 15px;
+    border: 1px solid #ccc;
+}

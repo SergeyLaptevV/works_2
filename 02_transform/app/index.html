@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <div id="main">
+        <div class="fon">
+            <div class="circle">
+               <b id="symbol" onclick="myFunction()">&#43;</b>
+            </div>
+            <div id="rangeUno">
+                <div class="text">
+                    Text1
+                </div>
+                <div class="rezRange">
+                    <div class="rez">
+                        + <span id="rangeValue">200</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="range" min="0" max="400" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+            </div>
+            <div id ="rangDos">
+                <div class="text">
+                    Text2
+                </div>
+                <div class="rezRange">
+                    <div class="rez">
+                        + <span id="rangeValue2">2000</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="range" min="0" max="4000" onchange="document.getElementById('rangeValue2').innerHTML = this.value;">
+            </div>
+        </div>
+        <img src="img/Слой%2023.png" alt="">
+    </div>
+
+</body>
+<script>
+    function myFunction() {
+        var test = document.getElementById("symbol");
+        test.innerHTML = "&#10003;";
+    }
+</script>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0; }
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1240px;
+    height: 100%;
+    min-height: 680px;
+    text-align: center;
+    background-image: url("../img/Layer36.jpg");
+    background-repeat: no-repeat;
+}
+
+#menu{
+    margin: 0;
+    padding: 40px 0 0 50px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+#logo{
+    padding: 20px 0 0 0;
+    color: white;
+    text-transform: uppercase;
+}
+    .test {
+        color:#2faef6;
+        font-size: 60px;
+    }
+
+#registr{
+    padding: 40px 0 0 0;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.jumb{
+    padding: 100px 0 0 0;
+    font-size: 80px;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hous{
+    font-size: 60px;
+    color:#8babc7;
+    text-align: center;
+    text-transform: uppercase;
+}
+.more{
+    text-align: center;
+}
+    .more button{
+        width: 220px;
+        height: 40px;
+        font-size: 16px;
+        color:white;
+        background-color: #2faef6;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+
+.about{
+    margin: 0 auto;
+    padding: 20px 0 0 110px;
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    min-height: 110px;
+    background-image: url("../img/fon.png");
+}
+    .over{
+        color:white;
+        text-transform: uppercase;
+    }
+        .number{
+            font-size: 30px;
+        }
+        .coment{
+            padding: 0 0 0 40px;
+            color: #2faef6;
+        }
+
+.external{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    height: 50px;
+    background-image: url("../img/fon.png");
+}
+
+.us{
+    margin: 0 auto;
+    padding: 40px 60px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1140px;
+    min-width: 300px;
+    height: 100%;
+    min-height: 370px;
+    background-color: white;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+}
+    .aboutUs{
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .learn{
+        font-size: 16px;
+        color: #2faef6;
+        text-transform: uppercase;
+    }
+
+.projects{
+    margin: 0 auto;
+    padding: 370px 0 0 0;
+    width: 100%;
+    max-width: 1240px;
+    min-width: 300px;
+    height: 100%;
+    min-height: 1210px;
+    background-color:#e8ecf0;
+    text-align: center;
+}
+.projects button{
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    color:white;
+    background-color:#2faef6;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+    .foto{
+        max-width: 320px;
+        width: 90%;
+        height: 220px;
+    }
+    .nameHouse{
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px;
+
+    }
+    .bord{
+        padding: 10px;
+        background-color: white;
+    }
+
+footer{
+    margin: 0 auto;
+    padding: 45px 0;
+    font-size: 13px;
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    min-height: 90px;
+    color:white;
+    background-color: #476882;
+    text-align: center;
+}

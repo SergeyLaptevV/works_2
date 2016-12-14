@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myCompany</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a data-toggle="tab"  class="navbar-brand" href="#home">MyCompany</a>
+                    <img  style="border-radius: 320px" src="img/logotip.jpg" alt="Image">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a data-toggle="tab" href="#home">Главная</a></li>
+                        <li><a data-toggle="tab" href="#about">Кто мы</a></li>
+                        <li><a data-toggle="tab" href="#specialization">Наша спецализация</a></li>
+                        <li><a data-toggle="tab" href="#whyus">Почему мы ?</a></li>
+                        <li><a data-toggle="tab" href="#gallery">Галерея объектов</a></li>
+                        <li><a data-toggle="tab" href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active main">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/architecture-768432_1920.jpg" alt="Image" width="500px" height="400px">
+                            <div class="carousel-caption">
+                                <h3>Сложные архитекруные строения</h3>
+                                <p>Дизайн на любой вкус</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/city-cars-road-houses.jpg" alt="Image" width="500px" height="400px">
+                            <div class="carousel-caption">
+                                <h3>Современное европейское</h3>
+                                <p>Жилые и нежылые помещения </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/city-building-fire-escape-fire-ladder.jpg" alt="Image" width="500px" height="400px">
+                            <div class="carousel-caption">
+                                <h3>Пректирование сложных сооружений</h3>
+                                <p>Восстановление зданий и помещений</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="container text-center">
+                    <br/><br/><br/>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/berlin.jpg" class="img-responsive" style="width:100%" alt="Image">
+                            <h3>От Берлина</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/home-1353389_1920.jpg" class="img-responsive" style="width:100%" alt="Image">
+                            <h3>До Вашего дома в саду</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="well">
+                                <p><a data-toggle="tab" href="#gallery">Галерея объектов</a></p>
+                            </div>
+                            <div class="well">
+                                <p><a data-toggle="tab" href="#contacts">Контакты</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="about" class="tab-pane fade main">
+                <div class="container-fluid">
+                    <div class="row content">
+                        <div class="col-sm-12">
+                            <div class="well">
+                                <h4>Компания ... </h4>
+                                <p>Цель и миссия ...</p>
+                                <p>Основана в ... .... ...</p>
+                                <p>Количество сотрудником на 2016 ....</p>
+                                <p>Наши партнеры ... ... ...</p>
+                                <p>Награды ...</p>
+                                <p>Планы на будущее ...</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="well">
+                                        <h4>Количество клиентов</h4>
+                                        <p>10 000</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="well">
+                                        <h4>Страны в которых работает</h4>
+                                        <p>25</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="well">
+                                        <h4>Построенные здания</h4>
+                                        <p>15 000</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="well">
+                                        <h4>Восстановленно строений</h4>
+                                        <p>7 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="well">
+                                        <p>Важная информация</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="well">
+                                        <p>Важная информация и</p>
+                                        <p>Очень важная информация</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="well">
+                                        <p>Важная информация и</p>
+                                        <p>Очень важная информация и</p>
+                                        <p>Очень очень важная информация</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="well">
+                                        <p>Text</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="well">
+                                        <p>Text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="specialization" class="tab-pane fade main">
+                <div class="container-fluid">
+                    <div class="text-center">
+                        <h2>МЫ cпециализируемя на </h2>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h3>Строительство зданий и сооружений всех видов</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="img/huntington.jpg" class="img-thumbnail" width="300" height="200" alt="Image">
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-lg">Узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h3>Реконструкция и восстановлние старых зданий</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="img/architecture.jpg" class="img-thumbnail" width="300" height="200" alt="Image">
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-lg">Узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-default text-center">
+                                <div class="panel-heading">
+                                    <h3>Проектирование и дизайн</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="img/sky.jpg" class="img-thumbnail" width="300" height="200" alt="Image">
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-lg">Узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="whyus" class="tab-pane fade main">
+                <div class="row">
+                    <h2>
+                        Лучшие аргументы профессионализма - это отзывы клиентов :
+                    </h2>
+                    <br/>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/pexels-photo1.jpg" class="img-circle" height="55" width="55" alt="Image">
+                                </div>
+                                <div class="col-sm-8">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                John Persman
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Directol Company GHJ-95
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p>Буквы встречаются с языками, использующими латинский алфавит,
+                                могут возникнуть небольшие. Лучше использовать в длине наиболее
+                                распространенных слов слова получив. Смысловую нагрузку ему нести совсем.
+                                Xvi веке того, нечитабельность текста исключительно демонстрационная, то и проектах.
+                                Текстом является знаменитый lorem ipsum. Лучше использовать при оценке качества
+                                восприятия макета разной. Языками, использующими латинский алфавит, могут возникнуть.
+                                Просмотра шрифтов, абзацев, отступов. Применения такого текста сыграет.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/pexels-photo1.jpg" class="img-circle" height="55" width="55" alt="Image">
+                                </div>
+                                <div class="col-sm-8">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                John Persman
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Directol Company GHJ-95
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p>Оптически наблюдать объекты нельзя решить, какой именно из них.
+                                Показывает сильную концентрацию к ее плоскости галактики. Годы после
+                                открытия дискретных источников радиоизлучения показало, что. Посылаемого
+                                в окнах видимости между облаками пылевой материи после вспышек новых.
+                            </p>
+                            <p>
+                                Других характеристик содержащей десятки квадратных. О так как правило
+                                наблюдались. Радиоволн же группа, более многочисленная, состоит в окнах
+                                видимости. Связи с источниками радиоизлучения не об­наруживают галактической.
+                                Динамическими соображениями звезд с низкой точностью второй группы могли бы быть очень.
+                            </p>
+                            <p>
+                                Нельзя решить, какой именно из равномерно. Гипотеза о тщетности попыток
+                                отождествления галактических источников радиоизлучения являются очень
+                                велико. Велико и распределенных по небу. Надеяться на две группы могли
+                                бы тогда.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/pexels-photo1.jpg" class="img-circle" height="55" width="55" alt="Image">
+                                </div>
+                                <div class="col-sm-8">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                John Persman
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Directol Company GHJ-95
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p>
+                                Отсутствие концентрации этих источников радиоизлучения ожидает участь
+                                неотождествимости. Менее равномерно, без признаков концентраций к выводу.
+                                Видимости между облаками пылевой материи после открытия дискретных
+                                источников которого. Источника радиоизлучения не обнаруживалось странное
+                                обстоятельство зарегистрированное радиоизлучение доходит беспрепятственно.
+                                Ее плоскости галактики тоже будет понятно первые годы. Методы определения
+                                их радиоизлучение можно надеяться на отождествление.
+                            </p>
+                            <p>
+                                Квадратных минут проблема отождествления галактических источников
+                                радиоизлучения в состав галактики. Показывала никакой связи с низкой
+                                точностью остатками. Яркие объекты, например звезды первой. Сопоставлении
+                                галактик очень много, и остатками газовой материи после открытия
+                                дискретных. Друг к плоскости галактики и остатками газовой материи
+                                после открытия. Образом оказались в радиоволнах, больше, чем у звезд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery" class="tab-pane fade main">
+                <div class="container-fluid text-center bg-grey">
+                    <h2>Портфолио</h2>
+                    <h4>То, что мы создали !</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img src="img/blue-building.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal1">
+                                    <img src="img/pexels.jpg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal1" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal2">
+                                    <img src="img/pexels-photo.jpg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal2" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal3">
+                                    <img src="img/pexels30557.jpg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal3" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal4">
+                                    <img src="img/pexels-photo-105829.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal4" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal5">
+                                    <img src="img/pexels-photo-65567.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal5" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal6">
+                                    <img src="img/pexels-photo-51138.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal6" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal7">
+                                    <img src="img/pexels-photo-97227.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal7" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="thumbnail">
+                                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal8">
+                                    <img src="img/pexels-photo-51212.jpeg" class="img-rounded" alt="Image" width="500px" height="400px">
+                                </button>
+                                <div class="modal fade" id="myModal8" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Страна Город</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Комплекс строился ... лет</p>
+                                                <p>Стоимость ... </p>
+                                                <p>Ресурсы ... </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Город</strong></p>
+                                <p>Строительство Реконструкция Проектирование</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts" class="tab-pane fade main">
+                <div class="container-fluid bg-grey">
+                    <h2 class="text-center">
+                        Свяжитесь с нами, и мы свяжемся с вами
+                        <br/>
+                        в течение 24 часов.
+                        <br/>
+                        <br/>
+                    </h2>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p><span class="glyphicon glyphicon-map-marker"></span> Киев, Украина</p>
+                            <p><span class="glyphicon glyphicon-phone"></span> +038 000-00-00</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> info@myCompany.com</p>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Ваше имя" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Спросите нас о ..." rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button class="btn btn-default pull-right" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

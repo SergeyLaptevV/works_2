@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    margin: auto;
+    max-width: 1020px;
+    width: 100%;
+    background-color: #ada6a0;
+}
+.logo{
+    padding: 10px 0;
+    height: 120px;
+    color:#b6b4b2;
+    background-color: #ada6a0;
+    font-size: 88px;
+    text-align: center;
+
+    background: radial-gradient(white,#ada6a0);
+    background: -moz-radial-gradient(at 50% 30%,white,#ada6a0);
+    background: -webkit-radial-gradient(at 50% 30%,white,#ada6a0);
+    background: -o-radial-gradient(at 50% 30%,white,#ada6a0);
+    background: -ms-radial-gradient(at 50% 30%,white,#ada6a0);
+}
+.cont{
+    margin: 0 46px;
+    background-color: #ada6a0;
+    min-width: 125px;
+}
+.navigation {
+    list-style: none;
+    margin: 0;
+    background: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+}
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    line-height: 30px;
+    color: black;
+}
+.navLi{
+    width: 15%;
+}
+.navLiImp{
+    width: 40%;
+    text-align: right;
+}
+.searNav{
+    max-width: 260px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+    .searNav{
+        margin: 0;
+    }
+}
+@media all and (max-width: 600px) {
+    .navigation {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+    .navLi{
+        width: 100%;
+    }
+    .navLiImp{
+        width: 100%;
+        text-align: center;
+    }
+
+    .searNav{
+        margin: 0;
+    }
+}
+.section{
+    margin: 15px 0;
+    padding: 15px;
+    background-color: white;
+}
+.flex-container {
+    list-style: none;
+    background: #ada6a0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+}
+.flex-item {
+    width: 22%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+.imgs{
+    max-height: 160px;
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+}
+
+.textContent {
+    padding: 10px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+@media all and (max-width: 800px) {
+    .flex-container {
+        justify-content: center;
+    }
+    .flex-item {
+        width: 40%;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .flex-container {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+
+    .flex-item {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.more {
+    padding: 20px 10px 40px 0 ;
+    text-align: right;
+    text-decoration: underline;
+}
+.welcome {
+    list-style: none;
+    text-align: justify;
+    min-width: 230px;
+    margin: 12px 0;
+    padding: 12px 20px 12px 20px ;
+    background: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+
+}
+.imgWel {
+    width: 30%;
+    text-decoration: none;
+    display: block;
+}
+.contWel {
+    width: 70%;
+    text-decoration: none;
+    display: block;
+}
+.contWel p{
+    text-indent: 30px;
+    font-size: 12px;
+}
+@media all and (max-width: 900px) {
+    .welcome {
+        justify-content: flex-end;
+    }
+    .imgWel {
+        width: 90%;
+    }
+    .contWel {
+        width: 90%;
+    }
+}
+@media all and (max-width: 600px) {
+    .welcome {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+    .imgWel {
+        width: 100%;;
+    }
+    .contWel {
+        width: 100%;
+    }
+}
+.foot{
+    background-color: white;
+    margin-top: 12px;
+    padding: 20px;
+
+}

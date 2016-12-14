@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Conundrum</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+<body ng-controller="myCtrl">
+<div style="margin: 15% 45%">
+    <button ng-click="func()" class="btn btn-success">-- Start --</button>
+</div>
+<script type="text/javascript">
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope){
+        $scope.func = function(){
+            var war = prompt('Сколько дней длилась столетняя война ?', 'Тут пишем число. Удачи!');
+            if (war == '116') {
+                var animal = prompt('Правильно. Идем дальше. От какого животного происходит название Канарских островов?', 'Пишем с большой буквы');
+                if ( animal == 'Тюлень' ) {
+                    var month = prompt('В каком месяце отмечается октябрьская революция? Подсказываю - осенью.','Опять пишем с большой буквы.');
+                    if ( month == 'Ноябрь' ) {
+                        var abc = prompt('Славянские первоучители Кирил и Мефодий изобрели азбуку, которая называется:','Опять пишем с большой буквы');
+                        if ( abc == 'Глаголица' ) {
+                            var hat = prompt('В какой стране изобрели панамы ?','Шляпы такие...');
+                            if ( hat == 'Эквадор' ){
+                                alert('Ура! Вы завершили! Поздравляю!');
+                            }else if ( hat == null ) {
+                                alert('Остался один правильный ответ');
+                            }else {
+                                alert('Эх, не верно');
+                            }
+                        } else if ( abc == null ) {
+                            alert('А что же дальше, не интересно ?');
+                        } else {
+                            alert('Может ответ написали с маленькой буквы ?');
+                        }
+                    } else if ( month == null ) {
+                        alert('Вы были уже на пол пути ... ... ...');
+                    } else {
+                        alert('Может ответ написали с маленькой буквы ?');
+                    }
+                } else if ( animal == null ) {
+                    alert('И даже не попытаетесь угадать ?');
+                } else {
+                    alert('Ответ неверен');
+                }
+            }
+            else if ( war == null ) {
+                alert('Что ж вы так рано сдались ?');
+            }
+            else {
+                alert('К сожалению не правильно :(');
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

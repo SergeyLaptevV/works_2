@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading img</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div id = "main">
+        <div>
+            <br />
+            <input type="checkbox" ng-model="activate" /> infinite scroll
+            <br /><br />
+            <input type="number" step="3" ng-model="loading">
+            <br /><br />
+        </div>
+        <div  class="column">
+            <div class="photos"  ng-repeat="item in items| limitTo: limit">
+                <img ng-src="{{item.url}}" ng-click="removeItem($index)">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <button id="btn" ng-click="loadImg()" ng-disabled="activate">
+                Загрузить еще {{loading}}
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl", function($scope,$http){
+        //console.log("angular ok");
+        $http.get("http://jsonplaceholder.typicode.com/photos").success(function(response){
+            $scope.items = response;
+        });
+        $scope.limit = 12;
+        $scope.loading = 3;
+        $scope.loadImg = function(){
+            //console.log($scope.limit);
+            //console.log($scope.loading);
+            $scope.limit = $scope.limit + $scope.loading;
+        };
+        $scope.activate = false;
+        $scope.removeItem = function (item) {
+            $scope.items.splice(item, 1);
+        };
+    });
+</script>
+</html>

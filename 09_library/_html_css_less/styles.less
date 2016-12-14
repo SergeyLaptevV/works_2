@@ -1,0 +1,177 @@
+@main-color: #f4fbfd;
+@fon-color: #FFFFFF;
+@data-color: #999999;
+@bonus-color: #edf1f2;
+@a-color: #25a7e9;
+@focus-color: #000000;
+@fonprice-color:#f37322;
+@no-color:#cc3300;
+@es-color:#54b312;
+@strip-color:#cccccc;
+
+
+.add-mp(){
+  margin: 0;
+  padding: 0;
+};
+#main{
+  width: 920px;
+  margin: auto;
+  padding: 25px 0 25px 0;
+}
+#main1{
+  width: 870px;
+  margin:0 25px 0 25px;
+}
+.template{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+}
+.headblok{
+  width: 150px;
+  .add-mp();
+}
+.nameblok{
+  width: 200px;
+  .add-mp();
+}
+button.accordion {
+  background-color: @main-color;
+  cursor: pointer;
+  padding: 0;
+  width: 870px;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+button.accordion.active{
+  background-color: @fon-color;
+}
+div.panel {
+  padding: 0 20px;
+  display: none;
+}
+div.panel.show {
+  display: block;
+  .add-mp();
+}
+.block1{
+  width: 200px;
+}
+.data{
+  width: 200px;
+  margin:0;
+  padding:25px 0;
+  color: @data-color;
+}
+.custom{
+  width: 670px;
+  margin:0;
+  padding:25px 0;
+}
+.products{
+  width: 440px;
+  height: 40px;
+}
+.products1{
+  width: 440px;
+  padding: 25px 0;
+}
+.products2{
+  width: 440px;
+}
+.quantity{
+  width: 230px;
+  height: 40px;
+  text-align: center;
+}
+.quantity1{
+  width: 230px;
+  text-align: center;
+  padding: 25px 0;
+}
+.quantity2{
+  width: 230px;
+  text-align: center;
+}
+.price{
+  width: 200px;
+  height: 40px;
+  text-align: end;
+}
+.price1{
+  width: 200px;
+  text-align: end;
+  padding: 25px 0;
+}
+.price2{
+  width: 200px;
+  text-align: end;
+}
+.lib1::before {
+  content: url(img/lib1.png);
+}
+.lib2::before {
+  content: url(img/lib2.png);
+}
+.delivery{
+  width: 870px;
+  padding: 25px 0;
+  text-align: end;
+}
+.bunus{
+  width: 400px;
+  padding: 25px 0;
+    span{
+      background-color: @bonus-color;
+      padding: 5px;
+    }
+}
+.sum{
+  width: 470px;
+  text-align: end;
+  padding: 25px 0;
+}
+a{
+  text-decoration: none;
+  color:@a-color;
+}
+.foc {
+  border-bottom: 2px dotted @a-color;
+    &:focus {
+      color:@focus-color;
+      border-bottom: 0;
+    }
+}
+.fonprice{
+  color:@fonprice-color;
+}
+.no{
+  color:@no-color;
+  &::before  {
+      content: '\2716';
+    }
+}
+.es{
+  color:@es-color;
+  &::before  {
+    content: '\2714';
+  }
+}
+.truck::before {
+  content: url(img/truck.png);
+}
+.line{
+  text-decoration:line-through;
+}
+.details{
+  padding: 0 15px;
+}
+.strip{
+  border-top: 1px dotted @strip-color ;
+}
